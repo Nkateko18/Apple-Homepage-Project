@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #141414;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    position: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 150px;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+        color: #58a6ff;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #141414;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100vw; 
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    top: 1cm;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 20px 16px;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: #58a6ff;
+}
+
+h3 {
+    font-size: 12px;
+    color: lightgray;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.IPhone-15-Pro {
+    background: url("images/Iphone\ 15\ Pro.jpg");
+    margin-top: 0;
+}
+ 
+.tittle {
+    color: #fff;
+    text-align: center;
+    padding-top: 5.5rem;
+}
+
+.tittle-dark {
+    color: #000;
+    text-align: center;
+}
+.heading {
+    font-size: 5.6rem;
+    line-height: 1.07143;
+    letter-spacing: .005rem;
+}
+
+.sub-heading {
+    font-size: 2.65rem;
+    margin-top: .6rem;
+    letter-spacing: .008rem;
+    font-weight: 400;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+.cta-link {
+    color: #66bbff;
+    font-size: 2.1rem;
+    display: inline-block;
+}
+
+.cta-link:nth-child(2){
+    margin-left: 2.6rem;
+}
+.cta-link a{
+    border-bottom: none;
+}
+.cta-link:hover {
+    border-bottom: 2px solid #66bbff;
+}
+
+
+.IPhone-15 {
+    background: url("images/Iphone\ 15.jpg");
+}
+
+.Watch {
+    background: url("Images/Watch.jpg");
+}
+
+.hero {
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .6rem solid #fff;
+    border-bottom:.6rem solid #fff;
+}
+
+.IPhone-15-Pro {
+    border-top: none;
+}
+
+.tittle-heading-watch {
+    height: 7.8rem;
+    background: url("Images/Apple\ Watch\ Logo.jpeg") center no-repeat;
+    background-size: auto 7.8rem;
+    margin-top: 1.6rem;
+} 
+
+.series {
+    color: red;
+    font-size: 24px;
+}
+
+/* This Section is for the Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);  /* 2 columns */
+    grid-template-rows: repeat(3, 400px); /* 3 rows with a height of 100px each */
+    gap: 10px; /* Gap between grid items */
+    padding: 20px; /* Padding around the grid */
+}
+
+.grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+}
+
+.grid-heading {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.grid-subheading {
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+
+.ultra {
+    font-size:18px;
+    color: orange;
+}
+.iphone {
+    background: url("Images/Apple\ iPhone\ 13\ Pro\ Max\ 256GB\ 6_7´´\ Grey\ _\ Techinn.jpeg") no-repeat;
+    background-size: contain;
+    background-position: center right;
+}
+.macbook {
+    background: url("images/MacBook.jpeg") ;
+    background-size: contain;
+    background-position: center bottom;
+}
+.ipad {
+    background: url("Images/IPad\ Ad.jpeg") no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+.iwatch {
+    background: url("Images/Ultra\ 2\ Watch.jpeg");
+    background-position: center top;
+}
+.trade-in{
+    background: url("Images/Trade\ In.jpeg");
+    background-position: center bottom;
+}
+.icard {
+    background: url("Images/Apple\ Card.jpeg");
+}
+
+/*sildeshow */
+div.scroll-container {
+    background-color: lightgrey;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px;
+    width: 100%;
+}
+
+div.scroll-container img {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/* Keyframes for the animation */
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-645%); /* Move the images to the left */
+    }
+  }
+  
+  /* Apply the animation to the images */
+  div.scroll-container img {
+    animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+  }
+
+footer {
+    background-color: rgba(200,200,200,0.4);
+    color: black;
+    padding: 40px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+}
+
+.terms-conditions {
+    color: black;
+    opacity: 80%;
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+    padding-left: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.footer-column {
+    width: 20%; /* Adjust the width as needed */
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: black;
+    text-decoration: none;
+    opacity: 80%;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #595959;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.footer-style {
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+.footer-links {
+    margin-top: 5px;
+    
+}
+
+.last {
+    position: left;
+}
+
+.last a {
+    color: #58a6ff;
+}
